@@ -8,6 +8,8 @@
 ## Commands
 
 ```
+# COMMANDS TO RUN THE APPLICATION
+
 - Install yarn
 sudo apt remove cmdtest
 sudo apt remove yarn
@@ -36,4 +38,8 @@ source ~/.bashrc
 npm install -g @angular/cli
 ng --help
 ng serve
+
+# COMMANDS TO BUILD THE APPLICATION FROM SCRATCH
+
+ng new project-with-outlets
 ```
