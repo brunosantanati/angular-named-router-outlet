@@ -42,4 +42,10 @@ ng serve
 # COMMANDS TO BUILD THE APPLICATION FROM SCRATCH
 
 ng new project-with-outlets
+ng g c user/user-sidebar
+ng g c user/user-details
+ng g c photos/photos-sidebar
+ng g c photos/photos-details
+ng generate module app --flat
+ng generate module app-routing --flat --module=app
 ```
