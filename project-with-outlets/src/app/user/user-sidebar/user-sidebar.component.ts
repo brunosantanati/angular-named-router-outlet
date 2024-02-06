@@ -10,8 +10,6 @@ interface User {
 
 @Component({
   selector: 'app-user-sidebar',
-  standalone: true,
-  imports: [],
   templateUrl: './user-sidebar.component.html',
   styleUrl: './user-sidebar.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

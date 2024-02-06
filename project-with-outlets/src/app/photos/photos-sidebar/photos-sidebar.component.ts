@@ -9,8 +9,6 @@ interface Photo {
 
 @Component({
   selector: 'app-photos-sidebar',
-  standalone: true,
-  imports: [],
   templateUrl: './photos-sidebar.component.html',
   styleUrl: './photos-sidebar.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

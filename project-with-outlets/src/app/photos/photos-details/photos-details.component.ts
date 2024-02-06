@@ -17,8 +17,6 @@ interface PhotoDetails {
 
 @Component({
   selector: 'app-photos-details',
-  standalone: true,
-  imports: [],
   templateUrl: './photos-details.component.html',
   styleUrl: './photos-details.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
