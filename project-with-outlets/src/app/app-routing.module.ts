@@ -1,12 +1,26 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { PhotosSidebarComponent } from "./photos/photos-sidebar/photos-sidebar.component";
+import { UserSidebarComponent } from "./user/user-sidebar/user-sidebar.component";
+import { PhotosDetailsComponent } from "./photos/photos-details/photos-details.component";
+import { UserDetailsComponent } from "./user/user-details/user-details.component";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-
+const routes: Routes = [
+  { path: "", redirectTo: "users", pathMatch: "full" },
+  {
+    path: "users",
+    component: UserSidebarComponent,
+  },
+  { path: "user/:id", component: UserDetailsComponent, outlet: "details" },
+  {
+    path: "photos",
+    component: PhotosSidebarComponent,
+  },
+  { path: "photo/:id", component: PhotosDetailsComponent, outlet: "details" },
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

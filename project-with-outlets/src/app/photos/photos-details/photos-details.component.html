@@ -1,1 +1,4 @@
-<p>photos-details works!</p>
+<ng-container *ngIf="photo$ | async as photo">
+    <h3 class="mat-title">{{ photo.title }}</h3>
+    <img [src]="photo.url" alt="" />
+</ng-container>

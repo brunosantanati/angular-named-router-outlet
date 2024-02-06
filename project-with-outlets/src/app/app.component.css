@@ -1,0 +1,10 @@
+.content {
+    min-height: calc(100vh - 64px);
+    display: flex;
+}
+.active {
+    border-color: #fff;
+}
+a {
+    margin-left: 15px;
+}

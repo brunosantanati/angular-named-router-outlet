@@ -48,4 +48,6 @@ ng g c photos/photos-sidebar
 ng g c photos/photos-details
 ng generate module app --flat
 ng generate module app-routing --flat --module=app
+ng add @angular/material
+ng serve
 ```
